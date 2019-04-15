@@ -37,9 +37,7 @@ $f3->route('GET /breakfast/continental', function ()
     //Display a view
     $view = new Template();
     echo $view->render('views/bfast-cont.html');
-}
-
-);
+});
 
 $f3->route('GET /lunch', function ()
 {
@@ -48,9 +46,15 @@ $f3->route('GET /lunch', function ()
     $view = new Template();
     echo $view->render('views/lunch.html');
 
-}
+});
 
-);
+$f3->route('GET /lunch/brunch/buffet', function ()
+{
+//    echo "<h1>Brunch Buffet Continental page</h1>";
+    //Display a view
+    $view = new Template();
+    echo $view->render('views/buffet.html');
+});
 //Run fat free
 $f3->run();
 
