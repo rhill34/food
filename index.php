@@ -25,10 +25,21 @@ $f3->route('GET /', function () {
 });
 $f3->route('GET /breakfast', function ()
 {
-    echo "<h1>Breakfast page</h1>";
-//    //Display a view
-//    $view = new Template();
-//    echo $view->render('views/home.html');
+//    echo "<h1>Breakfast page</h1>";
+    //Display a view
+    $view = new Template();
+    echo $view->render('views/breakfast.html');
+
+}
+
+);
+
+$f3->route('GET /lunch', function ()
+{
+//    echo "<h1>lunch page</h1>";
+    //Display a view
+    $view = new Template();
+    echo $view->render('views/lunch.html');
 
 }
 
