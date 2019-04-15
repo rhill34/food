@@ -30,6 +30,13 @@ $f3->route('GET /breakfast', function ()
     $view = new Template();
     echo $view->render('views/breakfast.html');
 
+});
+$f3->route('GET /breakfast/continental', function ()
+{
+//    echo "<h1>Breakfast Continental page</h1>";
+    //Display a view
+    $view = new Template();
+    echo $view->render('views/bfast-cont.html');
 }
 
 );
