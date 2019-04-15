@@ -19,10 +19,9 @@ $f3->set('DEBUG', 3);
 //Define a default route
 $f3->route('GET /', function ()
 {
-    echo'FOOD!!!';
-//    //Display a view
-//    $view = new Template();
-//    echo $view->render('views/home2.html');
+    //Display a view
+    $view = new Template();
+    echo $view->render('views/home.html');
 
 }
 );
